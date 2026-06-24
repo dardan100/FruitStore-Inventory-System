@@ -18,7 +18,6 @@ int main()
 {
     InventoryManager store;
 
-    // Populojmë databazën me disa të dhëna fillestare (Seeding)
     store.addFruit(Fruit(101, "Golden Delicious", "Apple", 1.25, 85));
     store.addFruit(Fruit(102, "Cavendish Banana", "Tropical", 0.75, 12)); // Low stock
     store.addFruit(Fruit(103, "Blood Orange", "Citrus", 1.80, 45));

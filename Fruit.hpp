@@ -13,11 +13,11 @@ private:
     int quantity;
 
 public:
-    // Constructor me Default values (i domosdoshëm për std::unordered_map)
+    // Constructor with Default values
     Fruit(int id = 0, std::string name = "", std::string category = "", double price = 0.0, int quantity = 0)
         : id(id), name(name), category(category), price(price), quantity(quantity) {}
 
-    // Getters (të shënuara 'const' për siguri të memories)
+    // Getters
     int getId() const { return id; }
     std::string getName() const { return name; }
     std::string getCategory() const { return category; }
@@ -33,7 +33,6 @@ public:
             quantity -= amount;
     }
 
-    // Funksion ndihmës për printim të bukur në konsolë
     void display() const
     {
         std::cout << std::left << std::setw(6) << id
